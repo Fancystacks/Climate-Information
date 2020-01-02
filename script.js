@@ -54,6 +54,7 @@ $(document).ready(function () {
               // Store each of these in variables
               var temp = main.temp; // TODO: Convert to F
               var humidity = main.humidity;
+              var UVindex = data.value;
               var date = moment(currentObject.dt_txt).format('l'); // TODO: Use MomentJS to convert
               var icon = currentObject.weather[0].icon;
               var iconurl = "https://openweathermap.org/img/w/" + icon + ".png";
@@ -64,7 +65,7 @@ $(document).ready(function () {
               <div class="card-body 5-day">
                   <p><strong>${date}</strong></p>
                   <div><img src=${iconurl} /></div>
-                  <p>Temp: ${temp}°F</p>
+                  <p>${temp}°F</p>
                   <p>Humidity: ${humidity}%</p>
               </div>
           </div> 

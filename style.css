@@ -1,22 +1,22 @@
 .city-list {
-text-align: center;
-padding: 10px;
+padding-left: 40px;
+margin-top: 20px;
+text-transform: capitalize;
 }
 
 #clearCity {
 margin-top: 20px;
-background-color: ;
 }
 
 body {
-    background: rgb(174,232,238);
+background: rgb(174,232,238);
 background: radial-gradient(circle, rgba(174,232,238,1) 0%, rgba(148,187,233,1) 100%);
+font-family: sans-serif;
 }
 
-.jumbotron {
-    opacity: .5;
-    text-align: center;
+.container {
     color: black;
+    text-align: center;
 }
 
 .row{
@@ -25,6 +25,8 @@ background: radial-gradient(circle, rgba(174,232,238,1) 0%, rgba(148,187,233,1) 
 
 .card{
     border-radius: 10px;
-    background-color: #007bff;
-    color: white;
+    margin-right: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
 }
