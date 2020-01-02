@@ -13,20 +13,22 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark">
-            <h1>Weather Dashboard</h1>
-        </nav>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Weather Dashboard</h1>
+        </div>
+      </div>
     </header>
         <div class="row">
             <div class="col-sm-4 searchArea">
                 <h3>Search for a City:</h3>
                 <span id="error"></span>
                 <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" id="city" placeholder="Search"
+                    <input class="form-control mr-sm-2" type="search" id="city" placeholder="Search by city"
                         aria-label="Search">
                     <button type="button" id="submitCity" class="btn btn-primary" type="submit">Search</button>
-                    <button type="button" id="clearCity" class="btn btn-primary" type="clear">Clear search history</button>
-                </form>
+                  </form>
+                  <button type="button" id="clearCity" class="btn btn-primary" type="clear">Clear search history</button>
                 <br>
                 <div class="city-list"></div>
             </div>

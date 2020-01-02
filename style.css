@@ -1,0 +1,30 @@
+.city-list {
+text-align: center;
+padding: 10px;
+}
+
+#clearCity {
+margin-top: 20px;
+background-color: ;
+}
+
+body {
+    background: rgb(174,232,238);
+background: radial-gradient(circle, rgba(174,232,238,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.jumbotron {
+    opacity: .5;
+    text-align: center;
+    color: black;
+}
+
+.row{
+    margin-left: 30px;
+}
+
+.card{
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+}

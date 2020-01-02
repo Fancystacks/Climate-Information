@@ -25,7 +25,7 @@ $(document).ready(function () {
       // returning as a string, find javascript function to parse cityList
       if (list) {
           for (var i = 0; i < cityList.length; i++) {
-              var container = $("<div class=card></div>").text(cityList[i]);
+              var container = $("<div class=cities></div>").text(cityList[i]);
               $('.city-list').prepend(container);
           }
       }
