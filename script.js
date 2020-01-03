@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-  // FUNCTIONS
   function show(data) {
       return "<h2>" + data.name + moment().format(' (MM/DD/YYYY)') + "</h2>" +
           `
@@ -32,30 +31,23 @@ $(document).ready(function () {
   }
 
   function showForecast(data) {
-      var forecast = data.list; // [{},{},{}]
-      // We have an array of 40 objects
-      // We want every 5th object's date, icon, temp, humidity (index 4)
-      // Display date, icon, temp and humidity via html
-      // LOGIC:
+      var forecast = data.list; 
+  
       // Loop over array
       var currentForecast = [];
       for (var i = 0; i < forecast.length; i++) {
 
           var currentObject = forecast[i];
-          // First time through loop - 0: {}
-          // Second time through loop - 1: {}
-          // Third time through loop - 2: {}
 
-          var cityTime = currentObject.dt_txt.split(' ')[1] // '12:00:00'[1 is the number of index]
-          // At each index..If...dt_txt === "12:00:00" get info
+          var cityTime = currentObject.dt_txt.split(' ')[1] 
           if (cityTime === "12:00:00") {
-              // currentObject.main ... time, icon, temp, humidity
+              // currentObject.main: time, icon, temp, humidity
               var main = currentObject.main;
               // Store each of these in variables
-              var temp = main.temp; // TODO: Convert to F
+              var temp = main.temp; 
               var humidity = main.humidity;
               var UVindex = data.value;
-              var date = moment(currentObject.dt_txt).format('l'); // TODO: Use MomentJS to convert
+              var date = moment(currentObject.dt_txt).format('l'); 
               var icon = currentObject.weather[0].icon;
               var iconurl = "https://openweathermap.org/img/w/" + icon + ".png";
 
@@ -93,9 +85,8 @@ $(document).ready(function () {
       var city = $('#city').val();
       // push city to cityList array
       cityList.push(city);
-      // set cityList in localStorage (remember to use stringify!)
+      // stringify cityList in localStorage
       localStorage.setItem("cityList", JSON.stringify(cityList));
-      // check length of array. if > 5 then don't add.
       displayCities(cityList);
       
       if (city != '') {
