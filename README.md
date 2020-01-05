@@ -9,6 +9,7 @@
 ### Local storage will save the previous search results.
 
 ### Press 'clear' to clear all results from local storage to start over.
+- The page will reload upon pressing 'clear' for better user experience.
 
 <img src="https://user-images.githubusercontent.com/38336934/71777330-72a27400-2f5b-11ea-8ea8-d83b3b902651.png" width="490" height="300">
 
