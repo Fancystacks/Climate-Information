@@ -89,7 +89,7 @@ $(document).ready(function () {
       localStorage.setItem("cityList", JSON.stringify(cityList));
       displayCities(cityList);
       
-      if (city != '') {
+      if (city) {
 
           $.ajax({
               url: 'https://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=imperial" + "&APPID=5650ba04d76cc8ddc64d65a07cda4c4a",
