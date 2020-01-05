@@ -32,12 +32,12 @@ font-family: sans-serif;
 }
 
 footer {
-    background: #666666;
+    background: #0b358f;
     color: #ffffff;
     font-size: 10px;
     width: 100%;
     text-align: center;
-    border-top: 4px solid #4aaaa5;
+    border-top: 4px solid #2d85c0;
     position: absolute;
     bottom: 0;      
   }
