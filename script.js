@@ -51,7 +51,7 @@ $(document).ready(function () {
               var date = moment(currentObject.dt_txt).format('l'); 
               var icon = currentObject.weather[0].icon;
               var iconurl = "https://openweathermap.org/img/w/" + icon + ".png";
-
+            // add five templates for each day of the forecast
               var htmlTemplate = `
           <div class="col-sm currentCondition">
           <div class="card">
