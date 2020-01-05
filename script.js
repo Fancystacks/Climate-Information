@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+  // Show date and city of searchable location
   function show(data) {
       return "<h2>" + data.name + moment().format(' (MM/DD/YYYY)') + "</h2>" +
           `
