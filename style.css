@@ -43,3 +43,8 @@ footer {
     position: absolute;
     bottom: 0;      
   }
+
+#main {
+    padding-top: 0;
+    min-height: calc(100vh - 30px);
+}
