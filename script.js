@@ -70,7 +70,6 @@ $(document).ready(function () {
     }
 
     // METHODS
-
     var stored = localStorage.getItem("cityList")
     if (stored) {
         cityList = JSON.parse(stored)
