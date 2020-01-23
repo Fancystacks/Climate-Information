@@ -131,6 +131,13 @@ $(document).ready(function () {
 
 });
 
+$("#city").keypress(function( event ) {
+    event.preventDefault();
+    if ( event.which == 13 ) {
+            $("#city").trigger("submitCity");
+    }
+            });
+
 $('#clearCity').click(function (event) {
     localStorage.removeItem("cityList", cityList)
     location.reload();
