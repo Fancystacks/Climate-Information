@@ -78,7 +78,8 @@ $(document).ready(function () {
     }
 
     //var cityList = [];
-    $('#submitCity').click(function (event) {
+    $(document).ready(function() { 
+    $('#submitCity').on("click", function (event) {
         event.preventDefault();
         var city = $('#city').val();
         // push city to cityList array
@@ -130,13 +131,14 @@ $(document).ready(function () {
     displayCities(cityList);
 
 });
+});
 
-$("#city").keypress(function( event ) {
+$("#city").keyup(function(event) {
     event.preventDefault();
-    if ( event.which == 13 ) {
-            $("#city").trigger("submitCity");
+    if (event.keyCode === 13) {
+        $("#submitCity").click();
     }
-            });
+});
 
 $('#clearCity').click(function (event) {
     localStorage.removeItem("cityList", cityList)
